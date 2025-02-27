@@ -2,6 +2,16 @@
 
 using namespace std;
 
+typedef long long ll;
+typedef vector<int> vi;
+typedef pair<int, int> pi;
+
+#define F first
+#define S second 
+#define PB push_back
+#define MP make_pair
+#define REP(i,a,b) for (int i = a; i <= n;i++)
+
 int main() {
   //make the code run faster
   ios::sync_with_stdio(0);
@@ -42,10 +52,32 @@ int main() {
   // make sure there are no negative nums in remainder
   x = x%ml
   if (x < 0) x += m;
-  */
   //----------------------- FLOATING POINT NUMBERS
   // 64 bit double and 80 bit long double (more accurate)
-  printf("%.9f\n",x);
-
-
+  double x = 0.3*3+0.1;
+  printf("%.20f\n",x);
+  // to compare floating pt nums
+  if (abs(a-b) < 1e-9){
+    // a and b are equal
+  }
+  //----------------------- Shortening code
+  ll a = 123456789;
+  ll b = 987654321;
+  cout << a*b << "\n";
+  //----------------------- Macros 
+  // Vector and Pair Macros
+  vector<pair<int,int>> v;
+  int y1=1,x1=2,y2=3,x2=4;
+  v.PB(MP(y1,x1));
+  v.PB(MP(y2,x2));
+  for(size_t i=0; i<v.size();i++){
+    int d = v[i].F+v[i].S;
+    cout << "sum at index " << i << " : "<< d << "\n";
+  }
+  */
+  // loops
+  REP(i, 1, n) {
+    search(i);
+  }
+  
 }
